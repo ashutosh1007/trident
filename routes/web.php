@@ -10,7 +10,32 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes(['verify' => true]);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('profile', function () {
+    // Only verified users may enter...
+})->middleware('verified');
+
+Route::get('/', 'PagesController@index');
+
+Route::get('/index', 'PagesController@home');
+
+Route::get('/about', 'PagesController@about');
+
+Route::get('/contact', 'PagesController@contact');
+
+Route::get('/cart', 'PagesController@cart');
+
+Route::get('/shop', 'PagesController@shop');
+
+Route::get('/checkout', 'PagesController@checkout');
+
+Route::get('/add-to-wishlist', 'PagesController@addWishlist');
+
+Route::get('/order-complete','PagesController@orderComplete');
+
+Route::get('/product-detail','PagesController@productDetail');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
