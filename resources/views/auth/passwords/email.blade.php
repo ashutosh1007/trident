@@ -1,3 +1,6 @@
+<?php 
+    $title = "Verify!";
+?>
 @extends('layouts.app')
 
 @section('content')

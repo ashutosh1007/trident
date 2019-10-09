@@ -1,0 +1,19 @@
+            .text-align {
+                text-align: center;
+            }
+            
+            .div-bg {
+                background: rgba(255, 255, 255, 1);
+            }
+            
+            #div-body {
+                background: rgba(255, 203, 163, 0.5);
+            }
+            
+            .btn-padding {
+                padding: 0.6em 1em;
+            }
+            
+            .btn-border {
+                border-width: thick;
+            }

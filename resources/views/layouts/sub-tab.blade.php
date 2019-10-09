@@ -4,7 +4,7 @@
 @include('includes.head')
 
 <body>
-    <div class="colorlib-loader"></div>
+    <div class="trident-loader"></div>
     <div id="page">
        @include('includes.navbar')
        @include('includes.aside-pages3')

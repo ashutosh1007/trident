@@ -6,7 +6,7 @@
 @extends('layouts.tab')
 @section('content')
       
-<div id="colorlib-about">
+<div id="trident-about">
     <div class="container">
         <div class="row">
             <div class="about-flex">

@@ -1,3 +1,6 @@
+<?php 
+    $title = "Home";
+?>
 @extends('layouts.app')
 
 @section('content')
@@ -8,16 +11,21 @@
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
+                @if(isset(Auth::user()->email))
+                    <div class="alert alert-danger success-block">
                     You are logged in!
+                    <strong>{{ Auth::user()->email }}</strong>
+                    <a href="{{ url('/logout') }}">logout</a>
+                    </div>
+                @else
+                     <script> window.location = "/login" </script>
+                @endif
+
                 </div>
             </div>
+            
         </div>
     </div>
+    
 </div>
 @endsection

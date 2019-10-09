@@ -1,0 +1,38 @@
+<li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <!-- <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a> -->
+
+                                    <!-- <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form> -->
+                                </div>
+                            </li>
+
+
+
+
+// public function addToCart($id){
+    //     $productId = $id;
+    //     $productDetails = DB::table('products')
+    //     ->join('product_images', 'products.product_id','=', 'product_images.product_id')
+    //     ->join('product_color_quantities', 'product_images.product_id', '=', 'product_color_quantities.product_id')
+    //     ->where('products.product_id', $productId)
+    //     ->first();
+
+    //     $customerId  = $productDetails->product_id;
+    //     $productUniId = $productDetails->product_id;
+    //     $productQuantity = $productDetails->product_quantity;
+        
+    //     DB::table('carts')->insert(
+    //     ['customer_id' => $customerId , 'product_unique_id' => $productUniId, 'product_quantity' => $productQuantity]
+    //     );
+    //     return view('pages.shop');
+    // }

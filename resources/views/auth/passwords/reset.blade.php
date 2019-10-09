@@ -1,3 +1,7 @@
+
+<?php 
+    $title = "Forgot Password!";
+?>
 @extends('layouts.app')
 
 @section('content')

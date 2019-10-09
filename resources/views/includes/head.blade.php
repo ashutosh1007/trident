@@ -10,6 +10,7 @@
             echo $defaultTitle ." || ". $title;
         ?>
     </title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -26,11 +27,12 @@
     <meta name="twitter:card" content="" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
     <!-- Animate.css -->
+ 
+    <!-- Animate.css -->
     <link rel="stylesheet" href="{{asset('css/ui/animate.css')}}">
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="{{asset('css/ui/icomoon.css')}}">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="{{asset('css/ui/bootstrap.css')}}">
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="{{asset('css/ui/magnific-popup.css')}}">
     <!-- Flexslider  -->
@@ -44,6 +46,9 @@
     <link rel="stylesheet" href="{{asset('css/fonts/flaticon/font/flaticon.css')}}">
     <!-- Theme style  -->
     <link rel="stylesheet" href="{{asset('css/custom/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/ui/bootstrap.css')}}">
+    <!-- Custom style  -->
+    <link rel="stylesheet" href="{{asset('css/custom/styles.css')}}">
     <!-- Modernizr JS -->
     <script src="{{asset('js/minified/modernizr-2.6.2.min.js')}}"></script>
     <!-- FOR IE9 below -->

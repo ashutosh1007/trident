@@ -5,7 +5,7 @@
   
 @extends('layouts.tab') 
 @section('content')
-  <div id="colorlib-contact">
+  <div id="trident-contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
